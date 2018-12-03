@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ikea-Simulator</title>
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  <script src="js/main.js"> </script>
+</head>
+<body>
+
+
+
+  <a-scene stats>
+
+    <!--inladen assets-->
+    <a-assets>
+      <a-asset-item id="stoel-obj" src="img/stoel.obj"></a-asset-item>
+      <a-asset-item id="stoel-mtl" src="img/stoel.mtl"></a-asset-item>
+    </a-assets>
+
+
+
+    <a-entity obj-model="obj:#stoel-obj; mtl: #stoel-mtl" color="black" scale="0.75 0.75 0.75" rotation="0 270 0"  position="3.5 1.5 0">
+
+
+    <!--Showroom-->
+    <!--muren-->
+    <a-box width="10" height="5" depth="0.1"
+           position="0 2.5 -5"
+           src="img/muur2.png"
+           static-body></a-box>
+
+    <a-box width="10" height="5" depth="0.1"
+                  position="-5 2.5 0"
+                  rotation="0 90 0"
+                  src="img/muur2.png"
+                  static-body></a-box>
+
+    <a-box width="10" height="5" depth="0.1"
+           position="5 2.5 0"
+           rotation="0 90 0"
+           src="img/muur2.png"
+           static-body></a-box>
+
+    <a-box width="10" height="5" depth="0.1"
+           position="0 2.5 5"
+           rotation="0 0 0"
+           src="img/muur2.png"
+           static-body></a-box>
+
+    <!--deur-->
+    <a-box width="2" height="4" depth="0.1"
+           position="0 2 -4.9"
+           src="img/deur.png">
+    </a-box>
+
+
+    <!--vloer-->
+    <a-plane src="img/vloer.jpg" height="10" width="10" rotation="-90 0 0"></a-plane>
+
+    <!--plafond-->
+    <a-plane src="img/muur2.png" height="10" width="10" rotation="90 0 0" position="0 5 0"></a-plane>
+
+
+
+
+    <!--Huiskamer-->
+    <!--muren-->
+    <a-box width="10" height="5" depth="0.1"
+           position="0 2.5 -17"
+           src="img/muur2.png"
+           static-body></a-box>
+
+    <a-box width="10" height="5" depth="0.1"
+           position="5 2.5 -12"
+           rotation="0 90 0"
+           src="img/muur2.png"
+           static-body></a-box>
+
+    <a-box width="10" height="5" depth="0.1"
+           position="0 2.5 -7"
+           rotation="0 0 0"
+           src="img/muur2.png"
+           static-body></a-box>
+
+    <a-box width="10" height="5" depth="0.1"
+           position="-5 2.5 -12"
+           rotation="0 90 0"
+           src="img/muur2.png"
+           static-body></a-box>
+
+    <!--deur-->
+
+
+
+    <!--vloer-->
+    <a-plane src="img/vloer.jpg" height="10" width="10" rotation="-90 0 0" position="0 0 -12" ></a-plane>
+
+    <!--plafond-->
+    <a-plane src="img/muur2.png" height="10" width="10" rotation="90 0 0" position="0 5 -12"></a-plane>
+
+
+
+  </a-scene>
+
+
+
+</body>
+</html>
